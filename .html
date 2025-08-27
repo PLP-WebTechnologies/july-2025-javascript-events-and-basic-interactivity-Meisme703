@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Events and Interactivity Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Events & Interactivity Demo</h1>
+  </header>
+  <main>
+    <!-- Interactive Light/Dark Mode -->
+    <section id="theme-section">
+      <h2>Theme Switcher</h2>
+      <button id="themeToggle">Toggle Light/Dark Mode</button>
+    </section>
+    
+    <!-- Interactive Counter -->
+    <section id="counter-section">
+      <h2>Click Counter</h2>
+      <p>Clicks: <span id="counterValue">0</span></p>
+      <button id="counterBtn">Increase Count</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+    
+    <!-- Interactive Collapsible FAQ -->
+    <section id="faq-section">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">JavaScript is a versatile scripting language for web development.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is event handling?</button>
+        <div class="faq-answer">Event handling means responding to user actions like clicks or key presses.</div>
+      </div>
+    </section>
+    
+    <!-- Custom Validated Form -->
+    <section id="form-section">
+      <h2>Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <span class="error" id="nameError"></span>
+        </label>
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <span class="error" id="emailError"></span>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <span class="error" id="passwordError"></span>
+        </label>
+        <button type="submit">Sign Up</button>
+        <div id="formMessage"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 JS Interactivity Demo
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
