@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7fafd;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background: #007acc;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+section {
+  margin-bottom: 2rem;
+}
+button {
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #005f99;
+}
+label {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+.error {
+  color: #d32f2f;
+  font-size: 0.9em;
+  margin-left: 0.5rem;
+}
+#formMessage {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+body.dark-mode {
+  background: #262b38;
+  color: #f1f1f1;
+}
+body.dark-mode main, body.dark-mode section {
+  background: #31354a;
+  color: #f1f1f1;
+}
+.faq-item {
+  margin-bottom: 1rem;
+}
+.faq-answer {
+  display: none;
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem 1rem;
+  background: #e7eefb;
+  border-left: 3px solid #007acc;
+  border-radius: 4px;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
